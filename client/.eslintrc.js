@@ -31,6 +31,7 @@ module.exports = {
     'no-underscore-dangle': OFF,
     'no-unused-vars': [ON, { args: 'none' }],
     'no-use-before-define': OFF,
+    'semi': [ERROR, 'never'],
     'react/prop-types': OFF,
     'react/jsx-indent': [ON, 4],
     'react/jsx-indent-props': OFF,
@@ -39,8 +40,8 @@ module.exports = {
     'react/jsx-props-no-spreading': OFF,
     'react/no-array-index-key': OFF,
     'react/no-unescaped-entities': OFF,
-    indent: OFF,
+    indent: [ERROR, 4],
     quotes: [ERROR, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
-    // 'import/no-extraneous-dependencies': ['error', {"devDependencies": true}],
+    'import/no-extraneous-dependencies': ['error', { "devDependencies": true }],
   },
 };

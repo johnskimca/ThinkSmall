@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -61,15 +62,27 @@ const VolunteerCard = props => {
 import Divider from '@material-ui/core/Divider';
 import Tags from './Tags/Tags';
 import classes from '../modules/card.module.css';
+=======
+import React from 'react'
+import Card from '@material-ui/core/Card'
+import CardActions from '@material-ui/core/CardActions'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
+import Tags from './Tags/Tags'
+import classes from '../modules/card.module.css'
+>>>>>>> 6e7538788d79be720391374c4f5d6dc78d33f8af
 
 const VolunteerCard = ({
     avatar, volunteerName, description, tags,
 }) => (
     <Card className={classes.root}>
         <CardMedia
-                className={classes.media}
-                image={avatar}
-                title="Volunteer Picture"
+            className={classes.media}
+            image={avatar}
+            title="Volunteer Picture"
         />
         <CardContent>
             <Typography variant="h5" component="h6" style={{ fontFamily: '\'Baloo 2\', cursive' }}>
@@ -88,7 +101,11 @@ const VolunteerCard = ({
             <Button size="small" color="primary" target="_blank">Start Conversation</Button>
         </CardActions>
     </Card>
+<<<<<<< HEAD
     );
 >>>>>>> 095e6e132d4a5094915d1e47f198552f2ab6dcf1
+=======
+)
+>>>>>>> 6e7538788d79be720391374c4f5d6dc78d33f8af
 
-export default VolunteerCard;
+export default VolunteerCard
