@@ -20,6 +20,7 @@ import VolunteersList from './components/VolunteersList'
 import NavBar from './components/NavBar/NavBar'
 import './App.css'
 import Maps from './components/Maps'
+import Account from './components/Account'
 
 library.add(fab, faPaperPlane, faBars, faList, faMapMarkedAlt)
 
@@ -40,6 +41,9 @@ function App({ switchState }) {
                 </Route>
                 <Route path="/inbox">
                     <Inbox />
+                </Route>
+                <Route path="/account">
+                    <Account />
                 </Route>
                 <Route path="*">
                     <NavBar />
